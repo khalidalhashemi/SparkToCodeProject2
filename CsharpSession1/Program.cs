@@ -36,10 +36,16 @@
             float MulResult = num1 * num2;
             float DivResult = num1 / num2;
 
+            bool ComparisonResult = num1 > num2;
+            bool ComparisonResult2 = num1 == num2;
+
             Console.WriteLine("Your Sum is: " + SumResult);
             Console.WriteLine("Your Sub is: " + SubResult);
             Console.WriteLine("Your Mul is: " + MulResult);
             Console.WriteLine("Your Div is: " + DivResult);
+
+            Console.WriteLine("Is the first number greater than the second? " + ComparisonResult);
+            Console.WriteLine("Are the two numbers equal? " + ComparisonResult2);
             ///////////////////////////////////////////////////////////////////////////////////
         }
     }

@@ -52,29 +52,70 @@
 
             // if-else Program
 
-            Console.WriteLine("Enter your test degree: ");
-            float degree = float.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your test degree: ");
+            //float degree = float.Parse(Console.ReadLine());
 
-            if (degree >= 0 && degree <= 20)
-            {
-                Console.WriteLine("Failed the test.");
-            }
-            else if (degree > 20 && degree <= 50)
-            {
-                Console.WriteLine("Good result.");
-            }
-            else if (degree > 50 && degree <= 80)
-            {
-                Console.WriteLine("Very good result.");
-            }
-            else if (degree > 80 && degree <= 100)
-            {
-                Console.WriteLine("Excellent result.");
-            }
-            else
-            {
-                Console.WriteLine("Invalid degree.");
-            }
+            //if (degree >= 0 && degree <= 20)
+            //{
+            //    Console.WriteLine("Failed the test.");
+            //}
+            //else if (degree > 20 && degree <= 50)
+            //{
+            //    Console.WriteLine("Good result.");
+            //}
+            //else if (degree > 50 && degree <= 80)
+            //{
+            //    Console.WriteLine("Very good result.");
+            //}
+            //else if (degree > 80 && degree <= 100)
+            //{
+            //    Console.WriteLine("Excellent result.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid degree.");
+                ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+                // Switch Program
+
+                Console.WriteLine("Welcome, Please pick your favorite color from the list: ");
+                Console.WriteLine("1. Red");
+                Console.WriteLine("2. Blue");
+                Console.WriteLine("3. Green");
+                Console.WriteLine("4. Yellow");
+                Console.WriteLine("5. othet");
+
+                int option = int.Parse(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1: 
+                        Console.WriteLine("Your favorite color is Red.");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Your favorite color is Blue.");
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Your favorite color is Green.");
+                        break;
+
+                    case 4:
+                        Console.WriteLine("Your favorite color is Yellow.");
+                        break;
+
+                    case 5:
+                        Console.WriteLine("Your favorite color is something else.");
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option.");
+                        Console.WriteLine("Please select a valid option from the list.");
+                        break;
+                }
         }
     }
 }

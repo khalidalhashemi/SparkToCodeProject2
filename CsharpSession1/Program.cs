@@ -25,28 +25,56 @@
 
             // Operations Program
 
-            Console.WriteLine("Enter first number: ");
-            float num1 = float.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter first number: ");
+            //float num1 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter second number: ");
-            float num2 = float.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter second number: ");
+            //float num2 = float.Parse(Console.ReadLine());
 
-            float SumResult = num1 + num2;
-            float SubResult = num1 - num2;
-            float MulResult = num1 * num2;
-            float DivResult = num1 / num2;
+            //float SumResult = num1 + num2;
+            //float SubResult = num1 - num2;
+            //float MulResult = num1 * num2;
+            //float DivResult = num1 / num2;
 
-            bool ComparisonResult = num1 > num2;
-            bool ComparisonResult2 = num1 == num2;
+            //bool ComparisonResult = num1 > num2;
+            //bool ComparisonResult2 = num1 == num2;
 
-            Console.WriteLine("Your Sum is: " + SumResult);
-            Console.WriteLine("Your Sub is: " + SubResult);
-            Console.WriteLine("Your Mul is: " + MulResult);
-            Console.WriteLine("Your Div is: " + DivResult);
+            //Console.WriteLine("Your Sum is: " + SumResult);
+            //Console.WriteLine("Your Sub is: " + SubResult);
+            //Console.WriteLine("Your Mul is: " + MulResult);
+            //Console.WriteLine("Your Div is: " + DivResult);
 
-            Console.WriteLine("Is the first number greater than the second? " + ComparisonResult);
-            Console.WriteLine("Are the two numbers equal? " + ComparisonResult2);
+            //Console.WriteLine("Is the first number greater than the second? " + ComparisonResult);
+            //Console.WriteLine("Are the two numbers equal? " + ComparisonResult2);
             ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+            // if-else Program
+
+            Console.WriteLine("Enter your test degree: ");
+            float degree = float.Parse(Console.ReadLine());
+
+            if (degree >= 0 && degree <= 20)
+            {
+                Console.WriteLine("Failed the test.");
+            }
+            else if (degree > 20 && degree <= 50)
+            {
+                Console.WriteLine("Good result.");
+            }
+            else if (degree > 50 && degree <= 80)
+            {
+                Console.WriteLine("Very good result.");
+            }
+            else if (degree > 80 && degree <= 100)
+            {
+                Console.WriteLine("Excellent result.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid degree.");
+            }
         }
     }
 }

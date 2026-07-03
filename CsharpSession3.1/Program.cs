@@ -1,4 +1,4 @@
-﻿namespace TaskSolution
+﻿namespace CsharpSession3._1
 {
     internal class Program
     {

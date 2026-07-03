@@ -24,23 +24,60 @@
             // While Loop
 
 
+            //bool exitDecision = false;
+            //string userInput;
+
+            //while (exitDecision == false)
+            //{
+            //    Console.WriteLine("print menu");
+
+            //    Console.WriteLine("Do you want to exit? (yes/no)");
+            //    userInput = Console.ReadLine();
+
+            //    if (userInput == "yes")
+            //    {
+            //        exitDecision = true;
+            //    }
+            //}
+
+            ////////////////////////////////////////////////////////////////////////////////
+            ///
+
+
+            // Do While
+
+
+
             bool exitDecision = false;
             string userInput;
+            int userChoise;
 
-            while (exitDecision == false)
+            do
             {
-                Console.WriteLine("print menu");
+                Console.WriteLine("Print the menu: ");
 
-                Console.WriteLine("Do you want to exit? (yes/no)");
+                try
+                {
+                    Console.WriteLine("Do you want to exit: (1/2)");
+                    userChoise = int.Parse(Console.ReadLine());
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+
+                    Console.WriteLine("Invalid Input");
+                }
+
+                Console.WriteLine("Do you want to exit? (yes/no).");
                 userInput = Console.ReadLine();
 
                 if (userInput == "yes")
                 {
                     exitDecision = true;
                 }
-            }
 
-            ////////////////////////////////////////////////////////////////////////////////
+            } while (exitDecision = false);
+
 
         }
     }

@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Built-in function call
+            // className.functionName(Parameter)
+
+            Math.Cos(90);
+            Math.Pow(2, 3);
+            Console.WriteLine("Print");
+            //Console.Clear();
+
+            double result = Math.Cos(90);
+            Console.WriteLine(result);
+
+            Console.WriteLine(Math.Pow(2, 3));
+
+            ////////////////////////////////////////////
         }
     }
 }

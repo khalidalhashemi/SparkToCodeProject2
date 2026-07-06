@@ -20,11 +20,36 @@
             ////////////////////////////////////////////
             ///
 
-            Console.WriteLine("Enter number: ");
-            float userInput = float.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter number: ");
+            //float userInput = float.Parse(Console.ReadLine());
 
-            double result = Math.Cos(userInput);
-            Console.WriteLine(result);
+            //double result = Math.Cos(userInput);
+            //Console.WriteLine(result);
+
+            ////////////////////////////////////////////
+            ///
+
+            //Console.WriteLine("Enter base number: ");
+            //float baseNumber = float.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter powr number: ");
+            //float powerNumber = float.Parse(Console.ReadLine());
+
+            //double result = Math.Pow(baseNumber, powerNumber);
+            //Console.WriteLine(result);
+
+            ////////////////////////////////////////////
+            ///
+
+            DateTime currentTiming = DateTime.Now;
+            Console.WriteLine(currentTiming);
+
+            DateTime timing = DateTime.Today;
+            Console.WriteLine(timing);
+
+            DateTime startSub = DateTime.Today;
+            DateTime endSub = startSub.AddDays(30);
+            Console.WriteLine("Your subscription ends on: " + endSub);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace CsharpPracticeSession3._2
+﻿using System.Runtime.ConstrainedExecution;
+
+namespace CsharpPracticeSession3._2
 {
     internal class Program
     {
@@ -41,15 +43,29 @@
             ////////////////////////////////////////////
             ///
 
-            DateTime currentTiming = DateTime.Now;
-            Console.WriteLine(currentTiming);
+            //DateTime currentTiming = DateTime.Now;
+            //Console.WriteLine(currentTiming);
 
-            DateTime timing = DateTime.Today;
-            Console.WriteLine(timing);
+            //DateTime timing = DateTime.Today;
+            //Console.WriteLine(timing);
 
-            DateTime startSub = DateTime.Today;
-            DateTime endSub = startSub.AddDays(30);
-            Console.WriteLine("Your subscription ends on: " + endSub);
+            //DateTime startSub = DateTime.Today;
+            //DateTime endSub = startSub.AddDays(30);
+            //Console.WriteLine("Your subscription ends on: " + endSub);
+
+            ////////////////////////////////////////////
+            ///
+
+            // String function format
+
+            Console.WriteLine("Enter a word: ");
+            string word = Console.ReadLine();
+
+            // String word = "Hello, world!"
+            int length = word.Length; // returns 13
+                        /* word.Substring(7, 5);*/    // returns "world"
+            string upperedWord = word.ToUpper(); // returns "HELLO, WORLD!"
+            string loweredWord = word.ToLower(); // returns "hello, world!"
         }
     }
 }

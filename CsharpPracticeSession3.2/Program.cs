@@ -1,4 +1,5 @@
-﻿using System.Runtime.ConstrainedExecution;
+﻿using System.Diagnostics.Tracing;
+using System.Runtime.ConstrainedExecution;
 
 namespace CsharpPracticeSession3._2
 {
@@ -58,14 +59,32 @@ namespace CsharpPracticeSession3._2
 
             // String function format
 
-            Console.WriteLine("Enter a word: ");
-            string word = Console.ReadLine();
+            //Console.WriteLine("Enter a word: ");
+            //string word = Console.ReadLine();
 
             // String word = "Hello, world!"
-            int length = word.Length; // returns 13
-                        /* word.Substring(7, 5);*/    // returns "world"
-            string upperedWord = word.ToUpper(); // returns "HELLO, WORLD!"
-            string loweredWord = word.ToLower(); // returns "hello, world!"
+            //int length = word.Length; // returns 13
+            //            /* word.Substring(7, 5);*/    // returns "world"
+            //string upperedWord = word.ToUpper(); // returns "HELLO, WORLD!"
+            //string loweredWord = word.ToLower(); // returns "hello, world!"
+
+            // in programming languages, a is different from A
+            // where, ahmed = AHMED = Ahmed
+
+            string name = "Ahmed";
+
+            Console.WriteLine("Enter your name:");
+            string input = Console.ReadLine();
+
+            if (input.ToUpper() == name.ToUpper())
+            {
+                Console.WriteLine("Wellcome to application.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid name.");
+            }
+
         }
     }
 }
